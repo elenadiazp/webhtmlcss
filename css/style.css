@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(246, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(0, 0, 0);
+}
+
+nav li:hover {
+    background-color:  rgb(235, 245, 250);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.p-3{
+    padding: 16px;
+}
+
+.bg-verde-c {
+    background-color: rgb(93, 161, 102);
+}
+.bg-verde {
+    background-color: rgb(132, 209, 120);
+}
+.bg-rosa {
+    background-color: rgb(242, 154, 177);
+}
+.text-white {
+    color: white;
+}
+.text-rosa {
+    color: rgb(242, 154, 177);
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+#olcustom ol {
+    list-style-type: upper-alpha;
+}
+#olcustom ol ol {
+    list-style-type:upper-roman;
+}
+#ol1custom ol{
+    list-style-type:lower-alpha;
+}
+#ol1custom ol ol{
+    list-style-type:lower-roman;
+}
+#ol1custom ol ol ol{
+    list-style-type:upper-roman;
+}
+#ulcustom ul ul {
+     list-style-image: url(../img/sol1.png);
+}
+#ulcustom ul ul ul{
+   list-style-type: square;
+   list-style-image: none;
+}
+dt{
+    background-color: rgb(252, 205, 104);
+    color:rgb(188, 81, 35);
+    font-size: 20px;
+    display: inline;
+}
+dd{
+    padding: 10px 0;
+}
+
+.text-subr{
+    text-decoration: underline;
+}
+table.tcenter{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(248, 221, 179);
+}
+table.tcenter th{
+    text-align: center;
+    background-color:rgb(182, 134, 78);
+    color:white;
+    font-size: 20px;
+}
+
+
+table.striped tr:nth-child(odd) {
+    background-color: rgb(182, 134, 78);
+    
+}
+table.striped tr:nth-child(even) {
+    background-color: rgb(248, 221, 179);
+    
+}
+table.horario {
+width: 70%;
+text-align: center;
+margin: 0  auto;
+font-size: 20px;
+
+}
+table.horario th.grupo{
+    font-size: 26px;
+    font-style: italic;
+    
+}
+table.horario th{
+    color: rgb(55, 125, 126);
+    background-color: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+table.horario td{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fol{
+    background-color: rgb(240, 240, 204);
+}
+.ende{
+    background-color: rgb(97, 197, 198);
+}
+.lmsg{
+    background-color: rgb(248, 212, 85);
+}
+.prog{
+    background-color: rgb(178, 123, 121);
+}
+.bdd{
+    background-color: rgb(246, 202, 201);
+}
+.sisi{
+    background-color: rgb(180, 180, 110);
+}
+.ing{
+    background-color: rgb(242, 166, 111);
+}
+.dias{
+    color: rgb(55, 125, 126);
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+
+form.form-login {
+    width: 50%;
+    float: left;
+    padding: 0 40px;
+}
+form.form-html5 {
+    width: 40%;
+    
+    margin: 0 auto;
+}
+form.form-registro{
+    width: 50%;
+    float: right;
+    padding: 0 40px;
+}
+.boton-verde{
+    background-color: green;
+    color:white;
+}
+.boton{
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.cb {
+    clear: both;
+}
+.imgf{
+    width: 50%;
+    float: left;
+    padding: 100px 40px;
+}
